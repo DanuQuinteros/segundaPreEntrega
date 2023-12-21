@@ -22,12 +22,12 @@ class JuegoPiedraPapelTijera {
       alert(`Elegiste ${this.elect(jugador)}`);
       alert(`Pc eligió ${this.opciones[pc - 1]}`);
 
-      if (jugador === pc) {
+      if (jugador == pc) {
         alert("Empate");
       } else if (
-        (jugador === 1 && pc === 3) ||
-        (jugador === 3 && pc === 2) ||
-        (jugador === 2 && pc === 1)
+        (jugador == 1 && pc == 3) ||
+        (jugador == 3 && pc == 2) ||
+        (jugador == 2 && pc == 1)
       ) {
         alert("Ganaste");
         this.gana++;
